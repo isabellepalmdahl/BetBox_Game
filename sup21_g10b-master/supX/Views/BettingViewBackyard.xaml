@@ -1,0 +1,90 @@
+﻿<UserControl x:Class="supX.Views.BettingViewBackyard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:supX.Views"
+             xmlns:data="clr-namespace:supX.Data"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/Backgrounds/BackyardBettingViewBackground.jpg"/>
+        </Grid.Background>
+
+        <Image Source="{Binding GameEngine.Fighter2.ImagePath}" Margin="472,178,132,8" Grid.RowSpan="2"/>
+        <Image Source="{Binding GameEngine.Fighter1.ImagePath}" Margin="130,170,460,15" Grid.RowSpan="2"/>
+        <Image Source="/Assets/Images/Frames/RoundWoodFrame.png" Margin="460,15,39,305" Width="301"/>
+        <Image Source="/Assets/Images/Frames/RoundWoodFrame.png" Margin="15,20,484,300" Width="301"/>
+        <Image Source="/Assets/Images/Text/FireVS.png" Margin="302,10,283,290" Width="215" d:LayoutOverrides="HorizontalAlignment"/>
+        <Image Source="/Assets/Images/Frames/WoodenSign2Way.png" Margin="1,-195,607,2" Grid.Row="1" d:LayoutOverrides="VerticalAlignment"/>
+        <Image Source="/Assets/Images/Frames/WoodenSign2WayFlipped.png" Margin="622,-200,1,1" Grid.Row="1" d:LayoutOverrides="VerticalAlignment"/>
+        <Image Source="/Assets/Images/Frames/woodframewithwood.png" Margin="426,48,23,186"/>
+        <Image Source="/Assets/Images/Frames/woodframewithwood.png" Margin="-17,48,466,179"/>
+        <Label Content="{Binding GameEngine.Odds[0]}" FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="51,233,0,0" VerticalAlignment="Top" Height="46" Width="60" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-3.087"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="{Binding GameEngine.Odds[1]}" FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="698,231,0,0" VerticalAlignment="Top" Height="41" Width="83" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="3.276"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="btnStartFightBackyard" Content="Start fight!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" HorizontalAlignment="Center" Height="130" Margin="0,170,0,0" VerticalAlignment="Top" Width="168" Foreground="White" FontWeight="Bold" FontSize="24" BorderBrush="{x:Null}" IsEnabled="{Binding btnEnabled}">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Frames/WoodenFrameBetAmount.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="txtBetAmount1" HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="54,314,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" TextChanged="txtBetAmount1_TextChanged"/>
+        <TextBox x:Name="txtBetAmount2" HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="709,312,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" TextChanged="txtBetAmount2_TextChanged"/>
+        <Label Content="{Binding GameEngine.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="540,20,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FontSize="15" FontWeight="Bold"/>
+        <Label Content="{Binding GameEngine.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="92,25,0,0" VerticalAlignment="Top" Width="178" Foreground="White" FontSize="15" FontWeight="Bold" d:LayoutOverrides="HorizontalAlignment"/>
+        <Label Content="Strength:" HorizontalAlignment="Left" Margin="110,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="Speed:" HorizontalAlignment="Left" Margin="110,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="Defense:" HorizontalAlignment="Left" Margin="110,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cardio:" HorizontalAlignment="Left" Margin="110,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameEngine.Fighter1.Strength}" HorizontalAlignment="Left" Margin="170,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameEngine.Fighter1.Speed}" HorizontalAlignment="Left" Margin="170,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameEngine.Fighter1.Defense}" HorizontalAlignment="Left" Margin="170,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameEngine.Fighter1.Cardio}" HorizontalAlignment="Left" Margin="170,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="Strength:" HorizontalAlignment="Left" Margin="554,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="Speed:" HorizontalAlignment="Left" Margin="554,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="Defense:" HorizontalAlignment="Left" Margin="554,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cardio:" HorizontalAlignment="Left" Margin="554,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameEngine.Fighter2.Strength}" HorizontalAlignment="Left" Margin="614,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameEngine.Fighter2.Speed}" HorizontalAlignment="Left" Margin="614,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameEngine.Fighter2.Defense}" HorizontalAlignment="Left" Margin="614,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameEngine.Fighter2.Cardio}" HorizontalAlignment="Left" Margin="614,145,0,0" VerticalAlignment="Top"/>
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="697,-30,38,3" FontWeight="Bold" Grid.Row="1" d:LayoutOverrides="VerticalAlignment" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenCircleButton.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="43,-29,687,2" FontWeight="Bold" Grid.Row="1" d:LayoutOverrides="VerticalAlignment" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenCircleButton.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</UserControl>

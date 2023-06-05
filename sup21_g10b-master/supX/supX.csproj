@@ -1,0 +1,414 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ViewModels\Player.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\Backgrounds\BackyardBettingViewBackground.jpg" />
+    <None Remove="Assets\Images\Backgrounds\BellagioView.jpg" />
+    <None Remove="Assets\Images\Backgrounds\Blackboard %281%29.png" />
+    <None Remove="Assets\Images\Backgrounds\GameOver %281%29.png" />
+    <None Remove="Assets\Images\Backgrounds\instructions.png" />
+    <None Remove="Assets\Images\Backgrounds\WembleyOutside.jpg" />
+    <None Remove="Assets\Images\Backgrounds\WinnerWallpaper.png" />
+    <None Remove="Assets\Images\BackyardView.jpg" />
+    <None Remove="Assets\Images\BlueButton.png" />
+    <None Remove="Assets\Images\Buttons\BigBlueRectangleFrame.png" />
+    <None Remove="Assets\Images\Buttons\BlackButton.png" />
+    <None Remove="Assets\Images\Buttons\BlueCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\GoldButton.png" />
+    <None Remove="Assets\Images\Buttons\GreenCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\HandBrownCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\PurpleCircleButton2.png" />
+    <None Remove="Assets\Images\Buttons\RectangleGoldButton.png" />
+    <None Remove="Assets\Images\Buttons\RectangleGreenButton.png" />
+    <None Remove="Assets\Images\Buttons\RectangleSilverButton.png" />
+    <None Remove="Assets\Images\Buttons\SilverButton.png" />
+    <None Remove="Assets\Images\Buttons\SmallBlueRectangleFrame.png" />
+    <None Remove="Assets\Images\Buttons\TealCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\TurquoiseButton.png" />
+    <None Remove="Assets\Images\Buttons\VioletButton.png" />
+    <None Remove="Assets\Images\Buttons\VioletCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\WoodSignButton.png" />
+    <None Remove="Assets\Images\fight1.gif" />
+    <None Remove="Assets\Images\Fighters\AdultHulk.png" />
+    <None Remove="Assets\Images\Fighters\Akuma.png" />
+    <None Remove="Assets\Images\Fighters\Andrew.png" />
+    <None Remove="Assets\Images\Fighters\ArnoldSchwarzenegger.png" />
+    <None Remove="Assets\Images\Fighters\Bamm-Bamm.png" />
+    <None Remove="Assets\Images\Fighters\Bart.png" />
+    <None Remove="Assets\Images\Fighters\BathDuck.png" />
+    <None Remove="Assets\Images\Fighters\Batman.png" />
+    <None Remove="Assets\Images\Fighters\Beetle.png" />
+    <None Remove="Assets\Images\Fighters\Betty.png" />
+    <None Remove="Assets\Images\Fighters\Bobby.png" />
+    <None Remove="Assets\Images\Fighters\BruceLee.png" />
+    <None Remove="Assets\Images\Fighters\CartoonMan.png" />
+    <None Remove="Assets\Images\Fighters\Chameleon.png" />
+    <None Remove="Assets\Images\Fighters\Chun-Li.png" />
+    <None Remove="Assets\Images\Fighters\Daniel.png" />
+    <None Remove="Assets\Images\Fighters\DonaldTrump.png" />
+    <None Remove="Assets\Images\Fighters\DrFoxes.png" />
+    <None Remove="Assets\Images\Fighters\DwayneJohnson.png" />
+    <None Remove="Assets\Images\Fighters\EvilMonkey.png" />
+    <None Remove="Assets\Images\Fighters\FighterAkebia.png" />
+    <None Remove="Assets\Images\Fighters\FighterAmputee.png" />
+    <None Remove="Assets\Images\Fighters\FighterBoxingGlove.png" />
+    <None Remove="Assets\Images\Fighters\FighterBull.png" />
+    <None Remove="Assets\Images\Fighters\FighterBurger.png" />
+    <None Remove="Assets\Images\Fighters\FighterCactus.png" />
+    <None Remove="Assets\Images\Fighters\FighterCasanova.png" />
+    <None Remove="Assets\Images\Fighters\FighterCockroach.png" />
+    <None Remove="Assets\Images\Fighters\FighterDemon.png" />
+    <None Remove="Assets\Images\Fighters\FighterDog.png" />
+    <None Remove="Assets\Images\Fighters\FighterDonkeyKong.png" />
+    <None Remove="Assets\Images\Fighters\FighterFamilyGuy.png" />
+    <None Remove="Assets\Images\Fighters\FighterFemaleKangaroo.png" />
+    <None Remove="Assets\Images\Fighters\FighterFish.png" />
+    <None Remove="Assets\Images\Fighters\FighterFrog.png" />
+    <None Remove="Assets\Images\Fighters\FighterHellman.png" />
+    <None Remove="Assets\Images\Fighters\FighterHippo.png" />
+    <None Remove="Assets\Images\Fighters\FighterHuman.png" />
+    <None Remove="Assets\Images\Fighters\FighterJinKazama.png" />
+    <None Remove="Assets\Images\Fighters\FighterJodiPerez.png" />
+    <None Remove="Assets\Images\Fighters\FighterKangaroo.png" />
+    <None Remove="Assets\Images\Fighters\FighterKid.png" />
+    <None Remove="Assets\Images\Fighters\FighterLego.png" />
+    <None Remove="Assets\Images\Fighters\FighterLion.png" />
+    <None Remove="Assets\Images\Fighters\FighterLlama.png" />
+    <None Remove="Assets\Images\Fighters\FighterLobster.png" />
+    <None Remove="Assets\Images\Fighters\FighterMarilynManson.png" />
+    <None Remove="Assets\Images\Fighters\FighterMonkeyD.png" />
+    <None Remove="Assets\Images\Fighters\FighterMonster.png" />
+    <None Remove="Assets\Images\Fighters\FighterMurderRabbit.png" />
+    <None Remove="Assets\Images\Fighters\FighterNinja.png" />
+    <None Remove="Assets\Images\Fighters\FighterPirateCat.png" />
+    <None Remove="Assets\Images\Fighters\FighterPizza.png" />
+    <None Remove="Assets\Images\Fighters\FighterRabiesDog.png" />
+    <None Remove="Assets\Images\Fighters\FighterRaisin.png" />
+    <None Remove="Assets\Images\Fighters\FighterRhino.png" />
+    <None Remove="Assets\Images\Fighters\FighterRooster.png" />
+    <None Remove="Assets\Images\Fighters\FighterScaredWoman.png" />
+    <None Remove="Assets\Images\Fighters\FighterSloth.png" />
+    <None Remove="Assets\Images\Fighters\FighterTheHulk.png" />
+    <None Remove="Assets\Images\Fighters\FighterTheRedGuy.png" />
+    <None Remove="Assets\Images\Fighters\FighterTiger.png" />
+    <None Remove="Assets\Images\Fighters\FighterVinSmoke.png" />
+    <None Remove="Assets\Images\Fighters\FighterWeirdArms.png" />
+    <None Remove="Assets\Images\Fighters\FighterZombie.png" />
+    <None Remove="Assets\Images\Fighters\FloydMayweatherJr.png" />
+    <None Remove="Assets\Images\Fighters\Grumpy.png" />
+    <None Remove="Assets\Images\Fighters\HenryHenderson.png" />
+    <None Remove="Assets\Images\Fighters\Hercules.png" />
+    <None Remove="Assets\Images\Fighters\HomerSimpson.png" />
+    <None Remove="Assets\Images\Fighters\HotDog.png" />
+    <None Remove="Assets\Images\Fighters\JackieChan.png" />
+    <None Remove="Assets\Images\Fighters\John.png" />
+    <None Remove="Assets\Images\Fighters\JohnCena.png" />
+    <None Remove="Assets\Images\Fighters\JohnnyBravo.png" />
+    <None Remove="Assets\Images\Fighters\Jonah.png" />
+    <None Remove="Assets\Images\Fighters\KaratePizza.png" />
+    <None Remove="Assets\Images\Fighters\LukeSkywalker.png" />
+    <None Remove="Assets\Images\Fighters\MannyPacquiao.png" />
+    <None Remove="Assets\Images\Fighters\Mayweather.png" />
+    <None Remove="Assets\Images\Fighters\McGregor.png" />
+    <None Remove="Assets\Images\Fighters\MikeTyson.png" />
+    <None Remove="Assets\Images\Fighters\MikeWazowski.png" />
+    <None Remove="Assets\Images\Fighters\MrBean.png" />
+    <None Remove="Assets\Images\Fighters\MuhammadAli.png" />
+    <None Remove="Assets\Images\Fighters\Mulan.png" />
+    <None Remove="Assets\Images\Fighters\Penniless.png" />
+    <None Remove="Assets\Images\Fighters\Peter.png" />
+    <None Remove="Assets\Images\Fighters\Pinocchio.png" />
+    <None Remove="Assets\Images\Fighters\Popeye.png" />
+    <None Remove="Assets\Images\Fighters\Popsicle.png" />
+    <None Remove="Assets\Images\Fighters\Rex.png" />
+    <None Remove="Assets\Images\Fighters\Shark.png" />
+    <None Remove="Assets\Images\Fighters\Simba.png" />
+    <None Remove="Assets\Images\Fighters\Soki.png" />
+    <None Remove="Assets\Images\Fighters\StreetFighter.png" />
+    <None Remove="Assets\Images\Fighters\StrongMan.png" />
+    <None Remove="Assets\Images\Fighters\Tarzan.png" />
+    <None Remove="Assets\Images\Fighters\ThaiBoxer.png" />
+    <None Remove="Assets\Images\Fighters\TimBoetsch.png" />
+    <None Remove="Assets\Images\Fighters\Tom.png" />
+    <None Remove="Assets\Images\Fighters\Turbo.png" />
+    <None Remove="Assets\Images\Fighters\Werewolf.png" />
+    <None Remove="Assets\Images\Frames\BalanceFrame.png" />
+    <None Remove="Assets\Images\Frames\blueborderneonborder.png" />
+    <None Remove="Assets\Images\Frames\BlueNeonFrame.png" />
+    <None Remove="Assets\Images\Frames\GoldBalanceFrame.png" />
+    <None Remove="Assets\Images\Frames\IceFrame.png" />
+    <None Remove="Assets\Images\Frames\neonborder.png" />
+    <None Remove="Assets\Images\Frames\PurpleOddsFrame.png" />
+    <None Remove="Assets\Images\Frames\RoundWoodFrame.png" />
+    <None Remove="Assets\Images\Frames\SilverFrame.png" />
+    <None Remove="Assets\Images\Frames\WoodenFrameBetAmount.png" />
+    <None Remove="Assets\Images\Frames\WoodenOddsFrame.png" />
+    <None Remove="Assets\Images\Frames\WoodenOddsFrameFlipped.png" />
+    <None Remove="Assets\Images\Frames\WoodenSign2Way.png" />
+    <None Remove="Assets\Images\Frames\WoodenSign2WayFlipped.png" />
+    <None Remove="Assets\Images\Frames\WoodenSignBackyard.png" />
+    <None Remove="Assets\Images\Frames\woodframewithwood.png" />
+    <None Remove="Assets\Images\game-lose.jpg" />
+    <None Remove="Assets\Images\Gif\Cartoon-Fighting-Cloud.gif" />
+    <None Remove="Assets\Images\GreenButton.png" />
+    <None Remove="Assets\Images\GreyButton.png" />
+    <None Remove="Assets\Images\Icons\ExplosionWinner.png" />
+    <None Remove="Assets\Images\Icons\FightCloud2.png" />
+    <None Remove="Assets\Images\Icons\FightCloud3.png" />
+    <None Remove="Assets\Images\Icons\FightCloud4.png" />
+    <None Remove="Assets\Images\Icons\FightingCloud.png" />
+    <None Remove="Assets\Images\Icons\SkeletonLoseView.png" />
+    <None Remove="Assets\Images\Icons\UnderConstruction.png" />
+    <None Remove="Assets\Images\Icons\WinnerIcon.png" />
+    <None Remove="Assets\Images\LetsGoBoxingStart.jpg" />
+    <None Remove="Assets\Images\mike_red.gif" />
+    <None Remove="Assets\Images\PurpleButton.png" />
+    <None Remove="Assets\Images\RedButton.png" />
+    <None Remove="Assets\Images\ringside.jpg" />
+    <None Remove="Assets\Images\rippedhole.png" />
+    <None Remove="Assets\Images\snake_blue.gif" />
+    <None Remove="Assets\Images\StageBettingView.png" />
+    <None Remove="Assets\Images\Text\FireVS.png" />
+    <None Remove="Assets\Images\Text\VS.png" />
+    <None Remove="Assets\Images\Text\VSBlue.png" />
+    <None Remove="Assets\Images\Text\WembleyLogo.png" />
+    <None Remove="Assets\Images\WembleyView.jpg" />
+    <None Remove="Resources\Cartoon-Fighting-Cloud.gif" />
+    <None Remove="Resources\FireWorksWinner.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\Backgrounds\instructions.png" />
+    <Resource Include="Assets\Images\Buttons\BlueCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\GreenCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\HandBrownCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\PurpleCircleButton2.png" />
+    <Resource Include="Assets\Images\Buttons\RectangleGoldButton.png" />
+    <Resource Include="Assets\Images\Buttons\RectangleGreenButton.png" />
+    <Resource Include="Assets\Images\Buttons\RectangleSilverButton.png" />
+    <Resource Include="Assets\Images\Buttons\TealCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\VioletCircleButton.png" />
+    <Resource Include="Assets\Images\Fighters\FighterCockroach.png" />
+    <Resource Include="Assets\Images\Fighters\FighterDemon.png" />
+    <Resource Include="Assets\Images\Fighters\FighterHellman.png" />
+    <Resource Include="Assets\Images\Fighters\FighterJinKazama.png" />
+    <Resource Include="Assets\Images\Fighters\FighterMarilynManson.png" />
+    <Resource Include="Assets\Images\Fighters\FighterMonkeyD.png" />
+    <Resource Include="Assets\Images\Fighters\FighterPirateCat.png" />
+    <Resource Include="Assets\Images\Fighters\FighterRabiesDog.png" />
+    <Resource Include="Assets\Images\Fighters\FighterRooster.png" />
+    <Resource Include="Assets\Images\Fighters\FighterTheRedGuy.png" />
+    <Resource Include="Assets\Images\Fighters\FighterVinSmoke.png" />
+    <Resource Include="Assets\Images\Fighters\FighterZombie.png" />
+    <Resource Include="Assets\Images\Fighters\HenryHenderson.png" />
+    <Resource Include="Assets\Images\Fighters\MikeWazowski.png" />
+    <Resource Include="Assets\Images\Fighters\Popeye.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\Fighters\Beetle.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\Backgrounds\BackyardBettingViewBackground.jpg" />
+    <Resource Include="Assets\Images\Backgrounds\BellagioView.jpg" />
+    <Resource Include="Assets\Images\Backgrounds\Blackboard (1).png" />
+    <Resource Include="Assets\Images\Backgrounds\GameOver (1).png" />
+    <Resource Include="Assets\Images\Buttons\TurquoiseButton.png" />
+    <Resource Include="Assets\Images\Buttons\VioletButton.png" />
+    <Resource Include="Assets\Images\Buttons\WoodSignButton.png" />
+    <Resource Include="Assets\Images\Fighters\AdultHulk.png" />
+    <Resource Include="Assets\Images\Fighters\Akuma.png" />
+    <Resource Include="Assets\Images\Fighters\Andrew.png" />
+    <Resource Include="Assets\Images\Fighters\ArnoldSchwarzenegger.png" />
+    <Resource Include="Assets\Images\Fighters\Bamm-Bamm.png" />
+    <Resource Include="Assets\Images\Fighters\Bart.png" />
+    <Resource Include="Assets\Images\Fighters\BathDuck.png" />
+    <Resource Include="Assets\Images\Fighters\Batman.png" />
+    <Resource Include="Assets\Images\Fighters\Betty.png" />
+    <Resource Include="Assets\Images\Fighters\Bobby.png" />
+    <Resource Include="Assets\Images\Fighters\BruceLee.png" />
+    <Resource Include="Assets\Images\Fighters\CartoonMan.png" />
+    <Resource Include="Assets\Images\Fighters\Chameleon.png" />
+    <Resource Include="Assets\Images\Fighters\Chun-Li.png" />
+    <Resource Include="Assets\Images\Fighters\Daniel.png" />
+    <Resource Include="Assets\Images\Fighters\DonaldTrump.png" />
+    <Resource Include="Assets\Images\Fighters\DrFoxes.png" />
+    <Resource Include="Assets\Images\Fighters\DwayneJohnson.png" />
+    <Resource Include="Assets\Images\Fighters\EvilMonkey.png" />
+    <Resource Include="Assets\Images\Fighters\FighterAkebia.png" />
+    <Resource Include="Assets\Images\Fighters\FighterAmputee.png" />
+    <Resource Include="Assets\Images\Fighters\FighterBoxingGlove.png" />
+    <Resource Include="Assets\Images\Fighters\FighterBull.png" />
+    <Resource Include="Assets\Images\Fighters\FighterBurger.png" />
+    <Resource Include="Assets\Images\Fighters\FighterCactus.png" />
+    <Resource Include="Assets\Images\Fighters\FighterCasanova.png" />
+    <Resource Include="Assets\Images\Fighters\FighterDog.png" />
+    <Resource Include="Assets\Images\Fighters\FighterDonkeyKong.png" />
+    <Resource Include="Assets\Images\Fighters\FighterFamilyGuy.png" />
+    <Resource Include="Assets\Images\Fighters\FighterFemaleKangaroo.png" />
+    <Resource Include="Assets\Images\Fighters\FighterFish.png" />
+    <Resource Include="Assets\Images\Fighters\FighterHippo.png" />
+    <Resource Include="Assets\Images\Fighters\FighterJodiPerez.png" />
+    <Resource Include="Assets\Images\Fighters\FighterKid.png" />
+    <Resource Include="Assets\Images\Fighters\FighterLego.png" />
+    <Resource Include="Assets\Images\Fighters\FighterLion.png" />
+    <Resource Include="Assets\Images\Fighters\FighterLlama.png" />
+    <Resource Include="Assets\Images\Fighters\FighterMonster.png" />
+    <Resource Include="Assets\Images\Fighters\FighterMurderRabbit.png" />
+    <Resource Include="Assets\Images\Fighters\FighterNinja.png" />
+    <Resource Include="Assets\Images\Fighters\FighterPizza.png" />
+    <Resource Include="Assets\Images\Fighters\FighterRaisin.png" />
+    <Resource Include="Assets\Images\Fighters\FighterRhino.png" />
+    <Resource Include="Assets\Images\Fighters\FighterScaredWoman.png" />
+    <Resource Include="Assets\Images\Fighters\FighterTiger.png" />
+    <Resource Include="Assets\Images\Fighters\FighterWeirdArms.png" />
+    <Resource Include="Assets\Images\Fighters\FloydMayweatherJr.png" />
+    <Resource Include="Assets\Images\Fighters\Grumpy.png" />
+    <Resource Include="Assets\Images\Fighters\Hercules.png" />
+    <Resource Include="Assets\Images\Fighters\HomerSimpson.png" />
+    <Resource Include="Assets\Images\Fighters\HotDog.png" />
+    <Resource Include="Assets\Images\Fighters\JackieChan.png" />
+    <Resource Include="Assets\Images\Fighters\John.png" />
+    <Resource Include="Assets\Images\Fighters\JohnCena.png" />
+    <Resource Include="Assets\Images\Fighters\JohnnyBravo.png" />
+    <Resource Include="Assets\Images\Fighters\Jonah.png" />
+    <Resource Include="Assets\Images\Fighters\KaratePizza.png" />
+    <Resource Include="Assets\Images\Fighters\LukeSkywalker.png" />
+    <Resource Include="Assets\Images\Fighters\MannyPacquiao.png" />
+    <Resource Include="Assets\Images\Fighters\Mayweather.png" />
+    <Resource Include="Assets\Images\Fighters\McGregor.png" />
+    <Resource Include="Assets\Images\Fighters\MikeTyson.png" />
+    <Resource Include="Assets\Images\Fighters\MrBean.png" />
+    <Resource Include="Assets\Images\Fighters\MuhammadAli.png" />
+    <Resource Include="Assets\Images\Fighters\Mulan.png" />
+    <Resource Include="Assets\Images\Fighters\Penniless.png" />
+    <Resource Include="Assets\Images\Fighters\Peter.png" />
+    <Resource Include="Assets\Images\Fighters\Pinocchio.png" />
+    <Resource Include="Assets\Images\Fighters\Popsicle.png" />
+    <Resource Include="Assets\Images\Fighters\Rex.png" />
+    <Resource Include="Assets\Images\Fighters\Shark.png" />
+    <Resource Include="Assets\Images\Fighters\Simba.png" />
+    <Resource Include="Assets\Images\Fighters\Soki.png" />
+    <Resource Include="Assets\Images\Fighters\StreetFighter.png" />
+    <Resource Include="Assets\Images\Fighters\StrongMan.png" />
+    <Resource Include="Assets\Images\Fighters\Tarzan.png" />
+    <Resource Include="Assets\Images\Fighters\ThaiBoxer.png" />
+    <Resource Include="Assets\Images\Fighters\TimBoetsch.png" />
+    <Resource Include="Assets\Images\Fighters\Tom.png" />
+    <Resource Include="Assets\Images\Fighters\Turbo.png" />
+    <Resource Include="Assets\Images\Fighters\Werewolf.png" />
+    <Resource Include="Assets\Images\Frames\BalanceFrame.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\fighters.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fody" Version="6.5.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fody" Version="6.5.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" PrivateAssets="All" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\Backgrounds\WembleyOutside.jpg" />
+    <Resource Include="Assets\Images\Backgrounds\WinnerWallpaper.png" />
+    <Resource Include="Assets\Images\Buttons\BlackButton.png" />
+    <Resource Include="Assets\Images\Buttons\GoldButton.png" />
+    <Resource Include="Assets\Images\Buttons\SilverButton.png" />
+    <Resource Include="Assets\Images\Frames\blueborderneonborder.png" />
+    <Resource Include="Assets\Images\Frames\BlueNeonFrame.png" />
+    <Resource Include="Assets\Images\Frames\IceFrame.png" />
+    <Resource Include="Assets\Images\Frames\neonborder.png" />
+    <Resource Include="Assets\Images\Frames\RoundWoodFrame.png" />
+    <Resource Include="Assets\Images\Fighters\FighterFrog.png" />
+    <Resource Include="Assets\Images\Fighters\FighterHuman.png" />
+    <Resource Include="Assets\Images\Fighters\FighterKangaroo.png" />
+    <Resource Include="Assets\Images\Fighters\FighterLobster.png" />
+    <Resource Include="Assets\Images\Fighters\FighterSloth.png" />
+    <Resource Include="Assets\Images\Fighters\FighterTheHulk.png" />
+    <Resource Include="Assets\Images\Frames\GoldBalanceFrame.png" />
+    <Resource Include="Assets\Images\Frames\PurpleOddsFrame.png" />
+    <Resource Include="Assets\Images\Frames\SilverFrame.png" />
+    <Resource Include="Assets\Images\Frames\WoodenFrameBetAmount.png" />
+    <Resource Include="Assets\Images\Frames\WoodenOddsFrame.png" />
+    <Resource Include="Assets\Images\Frames\WoodenOddsFrameFlipped.png" />
+    <Resource Include="Assets\Images\Frames\WoodenSign2Way.png" />
+    <Resource Include="Assets\Images\Frames\WoodenSign2WayFlipped.png" />
+    <Resource Include="Assets\Images\Frames\WoodenSignBackyard.png" />
+    <Resource Include="Assets\Images\Gif\Cartoon-Fighting-Cloud.gif" />
+    <Resource Include="Assets\Images\Frames\woodframewithwood.png" />
+    <Resource Include="Assets\Images\Icons\ExplosionWinner.png" />
+    <Resource Include="Assets\Images\Icons\FightCloud2.png" />
+    <Resource Include="Assets\Images\Icons\FightCloud3.png" />
+    <Resource Include="Assets\Images\Icons\FightCloud4.png" />
+    <Resource Include="Assets\Images\Icons\FightingCloud.png" />
+    <Resource Include="Assets\Images\Icons\SkeletonLoseView.png" />
+    <Resource Include="Assets\Images\Icons\UnderConstruction.png" />
+    <Resource Include="Assets\Images\Icons\WinnerIcon.png" />
+    <Resource Include="Assets\Images\Buttons\PurpleButton.png" />
+    <Resource Include="Assets\Images\Icons\ringside.jpg" />
+    <Resource Include="Assets\Images\Backgrounds\BackyardView.jpg" />
+    <Resource Include="Assets\Images\Buttons\BlueButton.png" />
+    <Resource Include="Assets\Images\Backgrounds\game-lose.jpg" />
+    <Resource Include="Assets\Images\Buttons\GreenButton.png" />
+    <Resource Include="Assets\Images\Buttons\GreyButton.png" />
+    <Resource Include="Assets\Images\Backgrounds\LetsGoBoxingStart.jpg" />
+    <Resource Include="Assets\Images\Icons\mike_red.gif" />
+    <Resource Include="Assets\Images\Buttons\RedButton.png" />
+    <Resource Include="Assets\Images\Icons\rippedhole.png" />
+    <Resource Include="Assets\Images\Icons\snake_blue.gif" />
+    <Resource Include="Assets\Images\Frames\StageBettingView.png" />
+    <Resource Include="Assets\Images\Text\FireVS.png" />
+    <Resource Include="Assets\Images\Text\VS.png" />
+    <Resource Include="Assets\Images\Text\VSBlue.png" />
+    <Resource Include="Assets\Images\Text\WembleyLogo.png" />
+    <Resource Include="Assets\Images\Backgrounds\WembleyView.jpg" />
+    <Resource Include="Resources\Cartoon-Fighting-Cloud.gif" />
+    <Resource Include="Resources\FireWorksWinner.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\Json\fighters.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

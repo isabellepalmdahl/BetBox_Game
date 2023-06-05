@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="supX.Views.BackyardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:supX.Views"
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="0,-5,0,5">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/Backgrounds/BackyardView.jpg"/>
+        </Grid.Background>
+        <Image Source="\Assets\Images\Icons\FightingCloud.png" Margin="210,124,175,-13" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.RowSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="254.531"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image gif:ImageBehavior.AnimatedSource="\Resources\Cartoon-Fighting-Cloud.gif" 
+               gif:ImageBehavior.RepeatBehavior="2x"
+               gif:ImageBehavior.AnimationSpeedRatio="2"               
+               Grid.Row="1"  
+               Grid.Column="1" 
+               Grid.RowSpan="2"/>
+        <Image Source="\Assets\Images\Frames\WoodenSignBackyard.png" Grid.Column="1" Margin="81,91,417,-19" Grid.Row="1" Grid.RowSpan="2"/>
+        <Button Content="See the result" Command="{Binding Result}"   Grid.Column="1" HorizontalAlignment="Left" Height="106" Margin="104,149,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="216" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" FontSize="24">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreyButton.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</UserControl>

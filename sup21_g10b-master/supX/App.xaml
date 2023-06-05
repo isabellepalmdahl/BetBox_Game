@@ -1,0 +1,86 @@
+﻿<Application x:Class="supX.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:supX"
+             xmlns:viewmodels="clr-namespace:supX.ViewModels"
+             xmlns:views="clr-namespace:supX.Views"
+      
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate
+             DataType="{x:Type viewmodels:ArenaViewModel}">
+            <views:ArenaView />
+        </DataTemplate>
+
+        <DataTemplate
+             DataType="{x:Type viewmodels:PlayerViewModel}">
+            <views:PlayerView />
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:BackyardViewModel}">
+            <views:BackyardView />
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:WembleyViewModel}">
+            <views:WembleyView/>
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:BellagioViewModel}">
+            <views:BellagioView/>
+        </DataTemplate>
+        
+        <DataTemplate
+            DataType="{x:Type viewmodels:RulesViewModel}">
+            <views:RulesView />
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:LoserViewModel}">
+            <views:LoserView/>
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:WinnerViewModel}">
+            <views:WinnerView/>
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:StartViewModel}">
+            <views:MainView/>
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:BettingViewBellagioViewModel}">
+            <views:BettingViewBellagio/>
+        </DataTemplate>
+
+        <DataTemplate 
+            DataType="{x:Type viewmodels:BettingViewBackyardViewModel}">
+            <views:BettingViewBackyard/>
+        </DataTemplate>
+        
+        <DataTemplate 
+            DataType="{x:Type viewmodels:BettingViewWembleyViewModel}">
+            <views:BettingViewWembley/>
+        </DataTemplate>             
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:GameOverViewModel}">
+            <views:GameOverView/>
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:CashOutViewModel}">
+            <views:CashOutView/>
+        </DataTemplate>         
+         
+        <DataTemplate
+            DataType="{x:Type viewmodels:InstructionsViewModel}">
+            <views:InstructionsView/>
+        </DataTemplate>
+
+    </Application.Resources>
+</Application>

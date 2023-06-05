@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="supX.Views.InstructionsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:supX.Views"
+             xmlns:data="clr-namespace:supX.Data"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/Backgrounds/instructions.png"/>
+        </Grid.Background>
+        <Button Content="Back to rules!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.RulesView}" HorizontalAlignment="Center" Margin="0,349,0,0" VerticalAlignment="Top" Height="86" Width="210" FontSize="22" FontWeight="Bold" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</UserControl>

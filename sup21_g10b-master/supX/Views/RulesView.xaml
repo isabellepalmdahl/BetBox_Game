@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="supX.Views.RulesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:supX.Views"
+             xmlns:data="clr-namespace:supX.Data"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="\Assets\Images\Backgrounds\Blackboard (1).png"/>
+        </Grid.Background>
+        <TextBox Focusable="False" Text="Rules &#xA;You start with a balance of 100 Money, our imaginary &#xA;currency. Choose an arena to visit to start the game. &#xA; &#xA;Two fighters per fight. Each fighter has its own strength &#xA;and weakness. These characteristics affect the odds. &#xA;How much are you willing to gamble on your &#xA;favorite ? &#xA;                  &#xA;After you have placed your bid, the fight begin. Depending &#xA;on the outcoming of the fight your balance will either &#xA;increase or drop. If it falls all the way to 0 you are &#xA;bankrupt, and it is game over." 
+                 HorizontalAlignment="Left" 
+                 Margin="21,0,0,0" 
+                 VerticalAlignment="Center" 
+                 Height="326" 
+                 Width="711" 
+                 BorderBrush="{x:Null}" 
+                 Foreground="White" 
+                 FontFamily="Courier New" 
+                 FontWeight="Bold" 
+                 FontSize="20" 
+                 Background="{x:Null}">
+        </TextBox>
+        <Button Content="Start game" 
+                Command="{Binding Parent.ChangeViewCommand}" 
+                CommandParameter="{x:Static data:GotoView.ArenaView}" Margin="137,363,431,0" VerticalAlignment="Top" Height="62" FontWeight="Bold" FontSize="20" Foreground="#FFC1C1C1" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/BlackButton.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Instructions" 
+                Command="{Binding Parent.ChangeViewCommand}" 
+                CommandParameter="{x:Static data:GotoView.InstructionsView}" Margin="433,363,135,0" VerticalAlignment="Top" Height="62" FontWeight="Bold" FontSize="20" Foreground="#FFC1C1C1" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/BlackButton.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</UserControl>

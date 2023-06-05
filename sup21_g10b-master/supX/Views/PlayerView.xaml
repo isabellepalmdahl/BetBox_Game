@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="supX.Views.PlayerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:supX.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="200">
+    <Grid Background="#FF231F20">
+        <Image Source="\Assets\Images\Frames\BalanceFrame.png" Margin="-54,0,77,0" />
+        <Label Content="{Binding Player.MyBalance, UpdateSourceTrigger=PropertyChanged}" Foreground="Gold" HorizontalAlignment="Left" VerticalAlignment="Center" Height="36" Width="115" Margin="80,0,0,0" FontSize="24"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="supX.Views.LoserView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:supX.Views"
+             xmlns:data="clr-namespace:supX.Data"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="Black">
+        <Image Source="\Assets\Images\Backgrounds\game-lose.jpg" Margin="40,44,39,68"/>
+        <Image Source="\Assets\Images\Icons\SkeletonLoseView.png" Margin="166,-31,350,152"  Width="244" d:LayoutOverrides="HorizontalAlignment" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="244" MinHeight="298"/>
+        <Button Content="Take me back to arenas" 
+                Command="{Binding Parent.ChangeViewCommand}" 
+                CommandParameter="{x:Static data:GotoView.ArenaView}" 
+                Margin="218,301,218,0" VerticalAlignment="Stretch" Height="97" FontWeight="Bold" FontSize="20" Foreground="#FFC1C1C1" MinHeight="97" MinWidth="364" HorizontalAlignment="Stretch" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/BlackButton.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</UserControl>
